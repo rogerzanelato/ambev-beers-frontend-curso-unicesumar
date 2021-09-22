@@ -34,7 +34,7 @@
 
 @media only screen and (max-width: 1200px) {
     .header .header__wrap {
-        padding: 0 2rem;
+        padding: 0 32px;
     }
 }
 
@@ -45,7 +45,7 @@
 
 .header .header__menu .nav-menu ul {
     list-style: none;
-    padding-left: 0.5rem;
+    padding-left: 8px;
 }
 
 .header .header__menu .nav-menu ul li {
@@ -62,12 +62,12 @@
     margin-left: auto;
     margin-right: auto;
     height: 100%;
-    padding-top: 3rem;
+    padding-top: 48px;
 }
 
 /* Searchbox */
 .content .search-content {
-    padding: 0px 3rem;
+    padding: 0px 48px;
     display: flex;
     flex-direction: column;
 }
@@ -75,13 +75,13 @@
 input {
     border: 0px;
     border-bottom: 1px solid #c3c3c3;
-    padding: 0.5rem;
+    padding: 8px;
     outline: none;
 }
 
 /* Listagem produtos */
 .content .content__products {
-    padding-top: 3rem;
+    padding-top: 48px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ input {
     width: 400px;
     font-family: "Lato", Arial, sans-serif;
     color: #441311;
-    padding: 1.5rem 0.5rem;
+    padding: 24px 8px;
 }
 
 .content .content__products .card:hover {
@@ -111,7 +111,7 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 8px 0;
 }
 
 .content .content__products .card .card__tag {
@@ -129,7 +129,7 @@ input {
 
 .content .content__products .card .card__descricao {
     font-size: 12px;
-    padding-bottom: 0.5rem;
+    padding-bottom: 8px;
 }
 
 .content .content__products .card .card__info .card__info--hightlight {

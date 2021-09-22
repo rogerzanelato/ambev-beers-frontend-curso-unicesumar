@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 1200px) {
     .header .header__wrap {
-        padding: 0 2rem;
+        padding: 0 32px;
     }
 }
 
@@ -46,7 +46,7 @@
 
 .header .header__menu .nav-menu ul {
     list-style: none;
-    padding-left: 0.5rem;
+    padding-left: 8px;
 }
 
 .header .header__menu .nav-menu ul li {
@@ -63,12 +63,12 @@
     margin-left: auto;
     margin-right: auto;
     height: 100%;
-    padding-top: 3rem;
+    padding-top: 48px;
 }
 
 /* Searchbox */
 .content .search-content {
-    padding: 0px 3rem;
+    padding: 0px 48px;
     display: flex;
     flex-direction: column;
 }
@@ -76,6 +76,6 @@
 input {
     border: 0px;
     border-bottom: 1px solid #c3c3c3;
-    padding: 0.5rem;
+    padding: 8px;
     outline: none;
 }

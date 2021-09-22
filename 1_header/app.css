@@ -35,7 +35,7 @@
 
 @media only screen and (max-width: 1200px) {
     .header .header__wrap {
-        padding: 0 2rem;
+        padding: 0 32px;
     }
 }
 
@@ -46,7 +46,7 @@
 
 .header .header__menu .nav-menu ul {
     list-style: none;
-    padding-left: 0.5rem;
+    padding-left: 8px;
 }
 
 .header .header__menu .nav-menu ul li {
