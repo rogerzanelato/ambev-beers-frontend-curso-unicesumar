@@ -3,13 +3,28 @@ const input = document.getElementById('search-field');
 
 // Delegamos a função handleInputEvent para ser acionada sempre que o usuário digitar alguma coisa no campo de pesquisa 
 input.addEventListener('input', function () {
-    recriarCervejas(this.value);
+    recriarCervejasDebounced(this.value);
 });
 
 // Adicionamos o recriarCervejas no evento de load, para que as cervejas sejam carregadas ao abrir a página
 window.addEventListener('load', function() {
     recriarCervejas("");
 });
+
+const recriarCervejasDebounced = debounce(async (pesquisa) => await recriarCervejas(pesquisa), 300);
+function debounce(func, interval) {
+    let timer = null;
+  
+    return (...args) => {
+      clearTimeout(timer);
+      return new Promise((resolve) => {
+        timer = setTimeout(
+          () => resolve(func(...args)),
+          interval,
+        );
+      });
+    };
+}
 
 async function recriarCervejas(pesquisa) {
     const cervejas = await buscarCervejas(pesquisa);
