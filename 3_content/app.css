@@ -1,0 +1,144 @@
+@font-face {
+    font-display: auto;
+    font-family: 'abinbevheadlines';
+    src: url("./fonts/abinbevheadlines.eot");
+    src: url("./fonts/abinbevheadlines.woff2") format("woff2"),
+        url("./fonts/abinbevheadlines.woff") format("woff"),
+        url("./fonts/abinbevheadlines.ttf") format("truetype"),
+        url("./fonts/abinbevheadlines.eot?#iefix") format("embedded-opentype");
+    font-weight:normal;
+    font-style:normal
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Cabeçalho */
+.header {
+    height: 68px;
+    background: linear-gradient(to right, #ba0c2f 0%, #451311 100%);
+    width: 100%;
+}
+
+.header .header__wrap {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header .header__wrap {
+        padding: 0 2rem;
+    }
+}
+
+.header .header__logo img {
+    width: 105px;
+    height: 35px;
+}
+
+.header .header__menu .nav-menu ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.header .header__menu .nav-menu ul li {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+/* Conteúdo */
+.content {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    padding-top: 3rem;
+}
+
+/* Searchbox */
+.content .search-content {
+    padding: 0px 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 0px;
+    border-bottom: 1px solid #c3c3c3;
+    padding: 0.5rem;
+    outline: none;
+}
+
+/* Listagem produtos */
+.content .content__products {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content .content__products .card {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 400px;
+    font-family: "Lato", Arial, sans-serif;
+    color: #441311;
+    padding: 1.5rem 0.5rem;
+}
+
+.content .content__products .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 6px;
+}
+
+.content .content__products .card .card__title {
+    font-family: "abinbevheadlines", Arial, sans-serif;
+}
+
+.content .content__products .card .card__tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.content .content__products .card .card__tag {
+    background-color: #ff6a13;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 7px 10px;
+    border-radius: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.content .content__products .card .card__descricao {
+    font-size: 12px;
+    padding-bottom: 0.5rem;
+}
+
+.content .content__products .card .card__info .card__info--hightlight {
+    font-family: "abinbevheadlines", Arial, sans-serif;
+    font-weight: 700;
+}
+
+.content .content__products .card .card__imagem {
+    height: 250px;
+    width: 200px;
+}

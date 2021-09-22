@@ -1,0 +1,58 @@
+@font-face {
+    font-display: auto;
+    font-family: 'abinbevheadlines';
+    src: url("./fonts/abinbevheadlines.eot");
+    src: url("./fonts/abinbevheadlines.woff2") format("woff2"),
+        url("./fonts/abinbevheadlines.woff") format("woff"),
+        url("./fonts/abinbevheadlines.ttf") format("truetype"),
+        url("./fonts/abinbevheadlines.eot?#iefix") format("embedded-opentype");
+    font-weight:normal;
+    font-style:normal
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Cabeçalho */
+.header {
+    height: 68px;
+    background: linear-gradient(to right, #ba0c2f 0%, #451311 100%);
+    width: 100%;
+}
+
+.header .header__wrap {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+    .header .header__wrap {
+        padding: 0 2rem;
+    }
+}
+
+.header .header__logo img {
+    width: 105px;
+    height: 35px;
+}
+
+.header .header__menu .nav-menu ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.header .header__menu .nav-menu ul li {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Lato", Arial, sans-serif;
+}

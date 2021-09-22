@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cervejas Ambev</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon.png">
+    <link rel="stylesheet" href="app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrap">
+            <div class="header__logo">
+                <img src="imgs/logo.svg" title="Ambev" alt="Ambev" />
+            </div>
+            <div class="header__menu">
+                <nav class="nav-menu">
+                    <ul>
+                        <li>Catalogo de Cervejas</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div class="search-content">
+            <input id="search-field" class="search-content__input" placeholder="Procurar por nome ou descrição..." />
+        </div>
+
+        <div id="cervejas" class="content__products"></div>
+    </div>
+
+    <script src="app.js"></script>   
+</body>
+</html>
